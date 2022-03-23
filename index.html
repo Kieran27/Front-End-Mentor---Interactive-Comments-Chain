@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script src="script.js" defer charset="utf-8"></script>
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+  <main>
+    <section class="comments-container">
+      <article class="comment">
+        <div class="comment-vote-container">
+          <div class="vote-system" id='vote-system-desktop'>
+            <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+            <span class='vote-system-text'>12</span>
+            <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+          </div>
+        </div>
+        <div class="comment-content-container">
+          <div class="comment-header">
+            <div class="comment-header-userdata">
+            <span><img class='commenter-avatar' src="images/avatars/image-amyrobson.png" alt="avatar-amyrobson"></span>
+            <span class='commenter-name'>amyrobson</span>
+            <span class='commenter-date'>1 month ago</span>
+            </div>
+            <div class="reply-system" id='comment-header-reply'>
+              <span class="icon-class"> <img class='icon' src="images/icon-reply.svg" alt=""></span>
+              <span class='reply-system-text'>Reply</span>
+            </div>
+            </div>
+            <div class="comment-text-content">
+            <p>
+               Impressive! Though it seems the drag feature could be improved. But overall it looks incredible.
+               You've nailed the design and the responsiveness at various breakpoints works really well.
+            </p>
+            </div>
+            <div class="comment-footer">
+              <div class="vote-system">
+                <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+                <span class='vote-system-text'>12</span>
+                <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+              </div>
+              <div class="reply-system">
+                <span class="icon-class"> <img class='icon' src="images/icon-reply.svg" alt=""></span>
+                <span class='reply-system-text'>Reply</span>
+              </div>
+            </div>
+        </div>
+      </article>
+
+      <article class="comment">
+        <div class="comment-vote-container">
+          <div class="vote-system" id='vote-system-desktop'>
+            <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+            <span class='vote-system-text'>5</span>
+            <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+          </div>
+        </div>
+        <div class="comment-content-container">
+          <div class="comment-header">
+            <div class="comment-header-userdata">
+            <span><img class='commenter-avatar' src="images/avatars/image-maxblagun.png" alt="avatar-maxblagun"></span>
+            <span class='commenter-name'>maxblagun</span>
+            <span class='commenter-date'>2 weeks ago</span>
+            </div>
+            <div class="reply-system" id='comment-header-reply'>
+              <span class="icon-class"> <img class='icon' src="images/icon-reply.svg" alt=""></span>
+              <span class='reply-system-text'>Reply</span>
+            </div>
+            </div>
+            <div class="comment-text-content">
+            <p>
+               Woah, your project looks awesome! How long have you been coding for? I'm still new,
+               but I think I want to dive into React as well soon. Perhaps you can give me an insight
+               on where I can learn React? Thanks!
+            </p>
+            </div>
+            <div class="comment-footer">
+              <div class="vote-system">
+                <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+                <span class='vote-system-text'>5</span>
+                <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+              </div>
+              <div class="reply-system">
+                <span class="icon-class"> <img class='icon' src="images/icon-reply.svg" alt=""></span>
+                <span class='reply-system-text'>Reply</span>
+              </div>
+            </div>
+        </div>
+      </article>
+
+      <article class="comment reply">
+        <div class="comment-vote-container">
+          <div class="vote-system" id='vote-system-desktop'>
+            <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+            <span class='vote-system-text'>4</span>
+            <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+          </div>
+        </div>
+        <div class="comment-content-container">
+          <div class="comment-header">
+            <div class="comment-header-userdata">
+            <span><img class='commenter-avatar' src="images/avatars/image-ramsesmiron.png" alt="avatar-ramsesmiron"></span>
+            <span class='commenter-name'>ramsesmiron</span>
+            <span class='commenter-date'>1 weeks ago</span>
+            </div>
+            <div class="reply-system" id='comment-header-reply'>
+              <span class="icon-class"> <img class='icon' src="images/icon-reply.svg" alt=""></span>
+              <span class='reply-system-text'>Reply</span>
+            </div>
+            </div>
+            <div class="comment-text-content">
+            <p>
+               If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS and JS
+               before considering React. Its very tempting to jump ahead but lay a solid foundation first.
+            </p>
+            </div>
+            <div class="comment-footer">
+              <div class="vote-system">
+                <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+                <span class='vote-system-text'>4</span>
+                <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+              </div>
+              <div class="reply-system">
+                <span class="icon-class"> <img class='icon' src="images/icon-reply.svg" alt=""></span>
+                <span class='reply-system-text'>Reply</span>
+              </div>
+            </div>
+        </div>
+      </article>
+
+      <article id='existing-user-reply' class="comment reply user-made-reply">
+        <div class="comment-vote-container">
+          <div class="vote-system" id='vote-system-desktop'>
+            <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+            <span class='vote-system-text'>2</span>
+            <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+          </div>
+        </div>
+        <div class="comment-content-container">
+          <div class="comment-header">
+            <div class="comment-header-userdata">
+            <span><img class='commenter-avatar' src="images/avatars/image-juliusomo.png" alt="avatar-juliusomo"></span>
+            <span class='commenter-name'>juliusomo</span>
+            <span class="you">you</span>
+            <span class='commenter-date'>2 days ago</span>
+            </div>
+            <div class="edit-system" id='comment-header-reply'>
+              <div class="delete-container" id='delete'>
+                <span class="icon-class" id='delete'> <img class='icon' id='delete' src="images/icon-delete.svg" alt=""></span>
+                <span class='reply-system-text' id='delete'>Delete</span>
+              </div>
+              <div class="edit-container" id='edit'>
+                <span class="icon-class" id='edit'> <img class='icon'id='edit' src="images/icon-edit.svg" alt=""></span>
+                <span class='reply-system-text' id='edit'>Edit</span>
+              </div>
+            </div>
+            </div>
+            <div class="comment-text-content">
+            <p>
+               I couldn't agree more with this. Everything moves so fast and it always seems like
+               everyone knows the newest library/framework. But the fundamentals are what stay constant.
+            </p>
+            </div>
+            <div class="comment-footer">
+              <div class="vote-system">
+                <button id='upvotebutton'> <img src="images/icon-plus.svg" id='upvotebutton' alt="icon-plus-img"> </button>
+                <span class='vote-system-text'>2</span>
+                <button id='downvotebutton'> <img src="images/icon-minus.svg" id='downvotebutton' alt="icon-down-img"> </button>
+              </div>
+              <div class="edit-system">
+                <div class="delete-container" id='delete'>
+                  <span class="icon-class" id='delete'> <img class='icon' id='delete' src="images/icon-delete.svg" alt=""></span>
+                  <span class='reply-system-text' id='delete'>Delete</span>
+                </div>
+                <div class="edit-container" id='edit'>
+                  <span class="icon-class" id='edit'> <img class='icon'id='edit' src="images/icon-edit.svg" alt=""></span>
+                  <span class='reply-system-text' id='edit'>Edit</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </article>
+
+
+
+      <article class="user-reply">
+        <div class="user-reply-body">
+          <span><img class='commenter-avatar' id= 'user-reply-img' src="images/avatars/image-juliusomo.png" alt="avatar-juliusomo"></span>
+          <textarea id='user-comment-input' name="name" rows="8" cols="80" placeholder="Add a comment..."></textarea>
+          <span><button class='send-button' id= 'user-reply-send'>Send</button></span>
+        </div>
+        <div class="user-reply-footer">
+          <span><img class='commenter-avatar' src="images/avatars/image-juliusomo.png" alt="avatar-juliusomo"></span>
+          <span><button class='send-button'>Send</button></span>
+        </div>
+      </article>
+    </section>
+
+
+    <section class="warning-modal">
+      <h3>Delete Comment</h3>
+      <p>Are you sure you want to delete this comment? This will remove the comment and can't be undone.</p>
+      <div class="modal-buttons">
+        <button class="cancel" id='cancel'>No, Cancel</button>
+        <button class="accept" id='accept'>Yes, Delete</button>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kieran Singh</a>.
+  </div>
+</body>
+</html>
